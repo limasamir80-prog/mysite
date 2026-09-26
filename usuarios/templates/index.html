@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visite o Farol da Barra | Salvador</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Salvador<span>Turismo</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#atracoes">Atrações</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Farol da Barra</h1>
+            <p>O ponto de encontro entre a história, o oceano e o pôr do sol mais inesquecível da Bahia.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="historia" class="card-section">
+            <h2>História & Cultura</h2>
+            <p>Localizado no Fort de Santo Antônio da Barra, o Farol da Barra é a estrutura de sinalização marítima mais antiga da América do Sul, com origens no século XVII após o naufrágio do galeão Santíssimo Sacramento.</p>
+            <p>Além da relevância histórica na defesa da Baía de Todos-os-Santos, abriga o Museu Náutico da Bahia, com um acervo valioso composto por achados arqueológicos subaquáticos, mapas e instrumentos de navegação antigos.</p>
+        </section>
+
+        <section id="atracoes">
+            <h2>Principais Experiências</h2>
+            <div class="grid-atracoes">
+                <div class="card">
+                    <h3>Museu Náutico</h3>
+                    <p>Explore a cartografia antiga, maquetes de embarcações e objetos resgatados de naufrágios históricos.</p>
+                </div>
+                <div class="card">
+                    <h3>Pôr do Sol Icónico</h3>
+                    <p>Reúna-se nos relvados do forte ao final da tarde para aplaudir o espetáculo do sol a pôr-se no mar.</p>
+                </div>
+                <div class="card">
+                    <h3>Praia da Barra</h3>
+                    <p>Desfrute de águas calmas e cristalinas, ideais para banho, mergulho e desportos aquáticos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+            <div class="grid-galeria">
+                <img src="{% static 'imagens/farol.jpg' %}" alt="Farol da Barra em Salvador">
+                <img src="{% static 'imagens/praiaFarol.jpg' %}" alt="Vista do Mar na Barra">
+                <img src="{% static 'imagens/SolFarol.jpg' %}" alt="Pôr do Sol na Praia da Barra">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agência de Turismo Salvador. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

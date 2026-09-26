@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Barra de Navegação */
+header {
+    background-color: #1a365d;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #cbd5e0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cabeçalho Principal (Hero) */
+.hero {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* Conteúdo */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #1a365d;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.3rem;
+}
+
+.card-section p {
+    margin-bottom: 0.8rem;
+}
+
+/* Cartões de Experiências */
+.grid-atracoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 1.2rem;
+}
+
+.card h3 {
+    color: #2b6cb0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Galeria Estática de Imagens */
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}
