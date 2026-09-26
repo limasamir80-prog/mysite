@@ -95,12 +95,8 @@ pip install mysqlclient
 
 Alterar no arquivo "settings.py" as credenciais do banco de dados<br>
 ```
-'ENGINE': 'django.db.backends.mysql',
-'NAME': 'nome-do-banco-de-dados',
-'USER': 'usuario-do-banco-de-dados',
-'PASSWORD': 'senha-do-usuario-do-banco-de-dados',
-'HOST': 'localhost',
-'PORT': 3306,
+'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
 ```
 
 Executa as migration para criar as tabelas.
@@ -114,7 +110,7 @@ python manage.py createsuperuser
 ```
 ```
 Usuário (leave blank to use 'cesar'): admin
-Endereço de email: cesar@celke.com.br
+Endereço de email: limasamir80@gmail.com
 Password: 123456A#
 Password (again): 123456A#
 ```
@@ -185,8 +181,7 @@ git branch -M main
 
 Adicionar um repositório remoto ao repositório local.
 ´´´
-git remote add origin https://github.com/celkecursos/tutorial-curso-django.git
-´´´
+
 
 Enviar os commits locais para um repositório remoto.
 ´´´
